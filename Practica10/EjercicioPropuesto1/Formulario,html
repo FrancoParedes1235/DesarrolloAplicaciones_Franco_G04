@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Compra de Pasajes Aéreos</title>
+</head>
+<body>
+ <h1>Compra de Pasajes Aéreos</h1>
+ <form action="procesar.php" method="POST">
+ <label for="nombre">Nombre:</label>
+ <input type="text" name="nombre" id="nombre" required><br><br>
+<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+ <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"
+required><br><br>
+ <label for="tipo_pasajero">Tipo de Pasajero:</label>
+ <select name="tipo_pasajero" id="tipo_pasajero">
+ <option value="Adulto">Adulto</option>
+ <option value="Menor">Menor</option>
+ <option value="Infante">Infante</option>
+ </select><br><br>
+ <label for="destino">Destino:</label>
+ <input type="text" name="destino" id="destino" required><br><br>
+ <input type="submit" value="Comprar Pasaje">
+ </form>
+</body>
+</html>
